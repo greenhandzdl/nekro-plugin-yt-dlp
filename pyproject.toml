@@ -1,23 +1,28 @@
 [project]
-name = "nekro-plugin-template"
-version = "2.0.0"
-description = "NekroAgent 插件模板"
-authors = [{ name = "KroMiose", email = "li_xiangff@163.com" }]
+name = "nekro-plugin-yt-dlp"
+version = "0.1.0"
+description = "一个基于 yt-dlp 的 NekroAgent 插件，用于搜索和下载音视频。"
+authors = [{ name = "Gemini", email = "gemini@google.com" }]
 readme = "README.md"
 requires-python = ">=3.10,<3.12"
-dependencies = ["nekro-agent>=2.0.0"]
+dependencies = [
+    "nekro-agent>=2.0.0",
+    "yt-dlp>=2025.10.14",
+]
 
 [project.urls]
-Repository = "https://github.com/KroMiose/nekro-plugin-template"
+Repository = "https://github.com/greenhandzdl/nekro-plugin-yt-dlp"
 
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.hatch.build.targets.wheel]
-packages = ["."]
-only-include = ["__init__.py"]
+[tool.hatch.build.targets.wheel.files]
+include = [
+    "__init__.py",
+    "nekro_yt_dlp/**/*.py",
+]
 
 
 [tool.black]

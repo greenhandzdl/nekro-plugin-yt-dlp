@@ -171,3 +171,6 @@ plugins/workdir
 
 # webui build files
 static
+
+# pycharm files
+.idea/
