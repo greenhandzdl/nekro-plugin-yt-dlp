@@ -174,3 +174,6 @@ static
 
 # pycharm files
 .idea/
+
+# NekroAgent Example
+nekro_agent_plugins_eg

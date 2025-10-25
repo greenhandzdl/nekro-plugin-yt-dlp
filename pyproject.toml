@@ -1,14 +1,14 @@
 [project]
-name = "nekro-plugin-template"
-version = "2.0.0"
-description = "NekroAgent 插件模板"
-authors = [{ name = "KroMiose", email = "li_xiangff@163.com" }]
+name = "nekro-plugin-yt-dlp"
+version = "1.0.0"
+description = "A NekroAgent plugin to search and download audio/video using yt-dlp."
+authors = [{ name = "Gemini", email = "gemini@google.com" }]
 readme = "README.md"
 requires-python = ">=3.10,<3.12"
-dependencies = ["nekro-agent>=2.0.0"]
+dependencies = ["nekro-agent>=2.0.0", "yt-dlp"]
 
 [project.urls]
-Repository = "https://github.com/KroMiose/nekro-plugin-template"
+Repository = "https://github.com/greenhandzdl/nekro-plugin-yt-dlp"
 
 
 [build-system]
