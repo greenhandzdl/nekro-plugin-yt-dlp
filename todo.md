@@ -1,0 +1,32 @@
+# Nekro-Plugin-Yt-Dlp Development TODO
+
+- [x] **1. 初始化项目**
+    - [x] 基于提供的插件模板，使用 `uv` 创建并配置 NekroAgent 插件项目 `nekro-plugin-yt-dlp`。
+    - [x] 更新 `plugin` 元信息，包括插件名称、模块名、描述、版本、作者和仓库地址。
+    - [x] 修改项目 `Readme`，使其符合插件的需求，而不是模板。
+- [x] **2. 依赖管理**
+    - [x] 使用 `uv` 将 `yt-dlp` 库添加到项目依赖中。
+    - [x] 确保所有依赖项的版本兼容性。
+- [x] **3. 网页配置项实现**
+    - [x] `cookies` (Str)
+    - [x] `proxy` (Bool)
+    - [x] `format` (Str)
+    - [x] `default-search` (Str)
+    - [x] `timeout` (Int)
+- [x] **4. 辅助函数开发**
+    - [x] `_gen_ydl_opts() -> Dict`
+    - [x] `search(query: str, max_results: int = 5) -> List[Dict]`
+    - [x] `extract_info(url: str) -> Dict`
+    - [x] `download(url: str, format: str = config.format) -> str`
+    - [x] `cleanup(file_path: str) -> None`
+- [x] **5. 插件主功能实现**
+    - [x] 实现搜索、下载和清理的完整流程。
+- [x] **6. 测试与优化**
+    - [x] 编写单元测试。
+    - [x] 进行集成测试。
+    - [x] 代码优化。
+- [x] **7. 文档编写**
+    - [x] 编写插件功能、使用和配置文档。
+- [x] **8. 发布准备**
+    - [x] 遵循 NekroAgent 插件发布规范。
+    - [x] 最终代码和文档审查。

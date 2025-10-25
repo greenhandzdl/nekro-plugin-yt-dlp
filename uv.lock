@@ -1365,7 +1365,7 @@ wheels = [
 
 [[package]]
 name = "nekro-plugin-yt-dlp"
-version = "0.1.0"
+version = "1.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "nekro-agent" },
@@ -1375,7 +1375,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "nekro-agent", specifier = ">=2.0.0" },
-    { name = "yt-dlp", specifier = ">=2025.10.14" },
+    { name = "yt-dlp" },
 ]
 
 [[package]]
