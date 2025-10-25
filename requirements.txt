@@ -303,7 +303,7 @@ python-jose==3.5.0
     # via nekro-agent
 python-magic==0.4.27
     # via nekro-agent
-python-multipart==0.0.9
+python-multipart==0.0.18
     # via
     #   mcp
     #   nekro-agent
